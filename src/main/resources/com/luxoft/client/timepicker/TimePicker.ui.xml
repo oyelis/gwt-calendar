@@ -1,0 +1,15 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <ui:style>
+        .time{
+            margin-top: 8px;
+            padding: 2px 0 0 0;
+        }
+    </ui:style>
+    <g:HorizontalPanel>
+        <g:ListBox addStyleNames="{style.time}" ui:field="hours"/>
+        <g:Label addStyleNames="{style.time}" text=":"/>
+        <g:ListBox addStyleNames="{style.time}" ui:field="minutes"/>
+        <g:Label addStyleNames="{style.time}" text="чч:мм"/>
+    </g:HorizontalPanel>
+</ui:UiBinder>

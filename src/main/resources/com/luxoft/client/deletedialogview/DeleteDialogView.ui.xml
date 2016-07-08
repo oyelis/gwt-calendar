@@ -1,0 +1,13 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:gwt='urn:import:com.google.gwt.user.client.ui'>
+    <ui:with field="res" type="com.luxoft.client.deletedialogview.DeleteDialogViewResources"/>
+    <gwt:VerticalPanel>
+        <gwt:SimplePanel addStyleNames="{res.css.dialog}">
+            <gwt:Label ui:field="header" addStyleNames="{res.css.headerLabel}"/>
+        </gwt:SimplePanel>
+        <gwt:FlowPanel addStyleNames="{res.css.buttonAlign}">
+            <gwt:Button addStyleNames="{res.css.button}" ui:field="okDelete" text="Да"/>
+            <gwt:Button addStyleNames="{res.css.button}" ui:field="cancelDelete" text="Нет"/>
+        </gwt:FlowPanel>
+    </gwt:VerticalPanel>
+</ui:UiBinder>

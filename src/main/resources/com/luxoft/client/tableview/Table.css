@@ -1,0 +1,27 @@
+.cellTableHeader {
+    border-bottom: 2px solid #0c2337;
+    padding: 3px 15px;
+    text-align: left;
+    color: #0c2337;
+    text-shadow: #ddf 1px 1px 0;
+    overflow: hidden;
+}
+
+.cellTableSortableHeader:hover {
+    color: #204f7f;
+}
+
+.cellTableKeyboardSelectedCell {
+    border: none;
+}
+
+.cellTableSelectedRow {
+    background: #0c2337;
+    color: white;
+    height: auto;
+    overflow: auto;
+}
+
+.cellTableSelectedRowCell {
+    border: none;
+}

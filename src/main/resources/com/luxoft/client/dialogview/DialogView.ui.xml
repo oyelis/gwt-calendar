@@ -1,0 +1,36 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:gwt='urn:import:com.google.gwt.user.client.ui'
+             xmlns:dt='urn:import:com.google.gwt.user.datepicker.client'
+             xmlns:wid='urn:import:com.luxoft.client.timepicker'>
+    <ui:with field="res" type="com.luxoft.client.dialogview.DialogViewResources"/>
+    <gwt:VerticalPanel>
+        <gwt:Label addStyleNames="{res.css.headerLabel}" text="Создать/Редактировать событие"/>
+        <gwt:Label addStyleNames="{res.css.errorLabel}" text="" ui:field="errorDate"/>
+        <gwt:HorizontalPanel>
+            <gwt:Label addStyleNames="{res.css.label}" text="Дата начала:"/>
+            <dt:DateBox addStyleNames="{res.css.date}" ui:field="beginDate"/>
+            <wid:TimePicker ui:field="beginTime"/>
+        </gwt:HorizontalPanel>
+        <gwt:HorizontalPanel>
+            <gwt:Label addStyleNames="{res.css.label}" text="Дата окончания:"/>
+            <dt:DateBox addStyleNames="{res.css.date}" ui:field="endDate"/>
+            <wid:TimePicker ui:field="endTime"/>
+        </gwt:HorizontalPanel>
+        <gwt:HorizontalPanel>
+            <gwt:Label addStyleNames="{res.css.label}" text="Место:"/>
+            <gwt:TextBox addStyleNames="{res.css.field}" ui:field="place"/>
+        </gwt:HorizontalPanel>
+        <gwt:HorizontalPanel>
+            <gwt:Label addStyleNames="{res.css.label}" text="Тип:"/>
+            <gwt:ListBox addStyleNames="{res.css.field}" ui:field="type"/>
+        </gwt:HorizontalPanel>
+        <gwt:HorizontalPanel>
+            <gwt:Label addStyleNames="{res.css.label}" text="Описание:"/>
+            <gwt:TextBox addStyleNames="{res.css.field}" ui:field="description"/>
+        </gwt:HorizontalPanel>
+        <gwt:FlowPanel addStyleNames="{res.css.buttonAlign}">
+            <gwt:Button addStyleNames="{res.css.button}" text="Сохранить" ui:field="save"/>
+            <gwt:Button addStyleNames="{res.css.button}" text="Отмена" ui:field="cancel"/>
+        </gwt:FlowPanel>
+    </gwt:VerticalPanel>
+</ui:UiBinder>

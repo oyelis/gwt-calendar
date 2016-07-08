@@ -1,0 +1,20 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:gwt='urn:import:com.google.gwt.user.client.ui'
+             xmlns:tab='urn:import:com.luxoft.client.tableview'
+             xmlns:cal='urn:import:com.luxoft.client.calendarview'>
+    <ui:with field="res" type="com.luxoft.client.mainview.MainViewResources"/>
+    <gwt:TabLayoutPanel addStyleNames="{res.css.space}" ui:field="tabPanel" barHeight="25">
+        <gwt:tab>
+            <gwt:header>
+                Таблица
+            </gwt:header>
+            <tab:ListView addStyleNames="{res.css.view}" ui:field="listView"/>
+        </gwt:tab>
+        <gwt:tab>
+            <gwt:header>
+                Календарь
+            </gwt:header>
+            <cal:CalendarView addStyleNames="{res.css.view}" ui:field="calendarView"/>
+        </gwt:tab>
+    </gwt:TabLayoutPanel>
+</ui:UiBinder>

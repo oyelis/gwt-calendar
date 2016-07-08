@@ -1,0 +1,59 @@
+.button {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0 .1) 0 1px 0 0;
+    -moz-box-shadow: rgba(0, 0, 0, 0.0 .1) 0 1px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.0 .1) 0 1px 0 0;
+    background: #5B74A8;
+    border: 1px solid #29447E;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 6px;
+    margin: 5px;
+    height: 28px;
+    color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+
+.button-align {
+    width: 100%;
+    text-align: center;
+}
+
+.label, .field, .date {
+    box-sizing: border-box;
+    margin-top: 8px;
+    padding: 2px 5px;
+}
+
+.date{
+    width: 80px;
+    color: #0c2337;
+}
+
+.label {
+    width: 110px;
+    text-align: right;
+    color: #5B74A8;
+}
+
+.field {
+    width: 220px;
+    color: #0c2337;
+}
+
+.header-label {
+    margin: 8px;
+    width: 100%;
+    text-align: center;
+    color: #0c2337;
+}
+
+.error-label {
+    margin: 8px;
+    width: 100%;
+    text-align: center;
+    color: #8d131e;
+}
+

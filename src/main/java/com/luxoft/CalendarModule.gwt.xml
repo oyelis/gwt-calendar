@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='CalendarModule'>
+    <!-- Inherit the core Web Toolkit stuff.                        -->
+    <inherits name='com.google.gwt.user.User'/>
+    <!-- Inherit the default GWT style sheet.  You can change       -->
+    <!-- the theme of your GWT application by uncommenting          -->
+    <!-- any one of the following lines.                            -->
+    <!--<inherits name='com.google.gwt.user.theme.standard.Standard' />-->
+    <inherits name="com.google.gwt.user.theme.chrome.Chrome"/>
+    <!-- Specify the app entry point class.                         -->
+    <entry-point class='com.luxoft.client.CalendarModule'/>
+    <!--Set russian-->
+    <extend-property name="locale" values="ru"/>
+    <set-property name="locale" value="ru"/>
+    <!--Client bundle-->
+    <inherits name="com.google.gwt.resources.Resources"/>
+    <!-- Inherit the UiBinder module.                               -->
+    <inherits name="com.google.gwt.uibinder.UiBinder"/>
+    <!-- Inherit Validator                                          -->
+    <inherits name="org.hibernate.validator.HibernateValidator" />
+    <replace-with
+            class="com.luxoft.client.validator.ValidatorFactory">
+        <when-type-is class="javax.validation.ValidatorFactory" />
+    </replace-with>
+    <!-- Specify the paths for translatable code                    -->
+    <source path='client'/>
+    <source path='shared'/>
+</module>

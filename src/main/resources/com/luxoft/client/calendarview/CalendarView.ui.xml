@@ -1,0 +1,38 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:gwt='urn:import:com.google.gwt.user.client.ui'
+             xmlns:dp='urn:import:com.google.gwt.user.datepicker.client'>
+    <ui:with field="res" type="com.luxoft.client.calendarview.CalendarViewResources"/>
+        <gwt:DockPanel>
+            <gwt:Dock direction='WEST'>
+                <gwt:VerticalPanel>
+                    <gwt:HorizontalPanel>
+                        <gwt:Button addStyleNames="{res.css.button}" ui:field="createEvent" text="Создать"/>
+                        <gwt:Button addStyleNames="{res.css.button}" ui:field="reset" text="Сбросить"/>
+                    </gwt:HorizontalPanel>
+                    <dp:DatePicker addStyleNames="{res.css.customeDatePicker}" ui:field="picker"/>
+                </gwt:VerticalPanel>
+            </gwt:Dock>
+            <gwt:Dock direction='CENTER' width="1200px">
+                <gwt:VerticalPanel addStyleNames="{res.css.devider}">
+                    <gwt:HorizontalPanel>
+                        <gwt:Button addStyleNames="{res.css.button}" ui:field="today" text="Сегодня"/>
+                        <gwt:Button addStyleNames="{res.css.button}" ui:field="left" text="&lt;"/>
+                        <gwt:Button addStyleNames="{res.css.button}" ui:field="right" text="&gt;"/>
+                        <gwt:Label addStyleNames="{res.css.label}" ui:field="date"/>
+                        <gwt:Button addStyleNames="{res.css.button}" ui:field="week" text="Неделя"/>
+                        <gwt:Button addStyleNames="{res.css.button}" ui:field="month" text="Месяц"/>
+                    </gwt:HorizontalPanel>
+                    <gwt:HorizontalPanel>
+                        <gwt:ScrollPanel addStyleNames="{res.css.panelScroll}" ui:field="panel">
+                        </gwt:ScrollPanel>
+                    </gwt:HorizontalPanel>
+                </gwt:VerticalPanel>
+            </gwt:Dock>
+            <gwt:Dock direction='EAST'>
+                <gwt:VerticalPanel width="100%">
+                    <gwt:Label addStyleNames="{res.css.tasklabel}" text="Задачи"/>
+                    <gwt:TextArea addStyleNames="{res.css.tasksfield}" ui:field="tasks"/>
+                </gwt:VerticalPanel>
+            </gwt:Dock>
+        </gwt:DockPanel>
+</ui:UiBinder>

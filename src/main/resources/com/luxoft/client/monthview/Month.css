@@ -1,0 +1,35 @@
+.label {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: #29447E;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.day-header {
+    color: #29447E;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.area, .today-area {
+    color: #29447E;
+    text-align: left;
+    word-break: break-all;
+    width: 150px;
+    height: 100px;
+    border: 1px solid white;
+    overflow-y: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.area {
+    background: wheat;
+}
+
+.today-area {
+    background: burlywood;
+}
